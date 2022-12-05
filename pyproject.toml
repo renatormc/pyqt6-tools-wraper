@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pyqt6-tools-wrapper"
+version = "0.1.0"
+description = ""
+authors = ["renatormc <renatomartinsrmc@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pyqt6_tools_wrapper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+watchdog = "^2.1.9"
+inquirerpy = "^0.3.4"
+stringcase = "^1.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
