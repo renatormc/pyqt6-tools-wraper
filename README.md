@@ -34,3 +34,9 @@ python main.py new QDialog MyDialog
 python main.py new QWidget MyWidget
 ```
 
+# Install
+
+```
+python install.py
+```
+

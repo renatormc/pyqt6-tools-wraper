@@ -32,12 +32,12 @@ def get_ui_file(path: Path) -> Union[Path, None]:
 def designer(term):
 
     if not term:
-        subprocess.Popen([config.DESIGNER_EXE])
+        subprocess.Popen([config.local_config['designer_exe']])
         return
     path = Path(term)
     file = get_ui_file(path)
     if file:
-        subprocess.Popen([config.DESIGNER_EXE, str(file)])
+        subprocess.Popen([config.local_config["designer_exe"], str(file)])
     else:
         folder = Path(".")
         items = hp.find_ui_files(folder, term_search=term)
@@ -48,7 +48,7 @@ def designer(term):
             message="Model:",
             choices=items,
         ).execute()
-        subprocess.Popen([config.DESIGNER_EXE, file_])
+        subprocess.Popen([config.local_config["designer_exe"], file_])
 
 
 def new_item(item, name):
