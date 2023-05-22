@@ -11,6 +11,7 @@ python = "^3.10"
 watchdog = "^2.1.9"
 inquirerpy = "^0.3.4"
 stringcase = "^1.2.0"
+pyqt6-tools = "^6.4.2.3.3"
 
 
 [tool.poetry.group.dev.dependencies]
